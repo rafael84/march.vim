@@ -1,2 +1,1 @@
-# march.vim
-VIM syntax highlight plugin
+This is (very) basic Marchfile syntax highlight plugin for vim
