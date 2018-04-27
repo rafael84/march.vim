@@ -4,7 +4,7 @@ syn match marchComment "#.*$"
 syn region marchString start='"' end='"'
 syn match marchTag "--.*$"
 syn match marchIdentifier "[a-zA-Z]+"
-syn match marchLink "@\w+(?:.\w+)*"
+syn match marchLink "@[a-zA-Z]+(.[a-zA-Z]+)*"
 
 hi def link marchKeywords Keyword
 hi def link marchDataTypes Type
