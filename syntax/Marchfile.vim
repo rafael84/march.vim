@@ -16,7 +16,7 @@ syn keyword marchMethod GET POST PUT DELETE PATCH
 syn keyword marchRequest REQUEST BODY REQUEST_PATH REQUEST_QUERY
 syn keyword marchStatus OK BAD_REQUEST INTERNAL_SERVER_ERROR NOT_FOUND ACCEPTED
 
-hi def link marchON Special
-hi def link marchMethod Special
-hi def link marchRequest Special
-hi def link marchStatus Special
+hi def link marchON Constant
+hi def link marchMethod Constant
+hi def link marchRequest Constant
+hi def link marchStatus Constant
