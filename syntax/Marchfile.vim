@@ -4,7 +4,9 @@ syn match marchComment "#.*$"
 syn region marchString start='"' end='"'
 syn match marchTag "--.*$"
 syn match marchIdentifier "[a-zA-Z]+"
-syn match marchLink "@[a-zA-Z]+(.[a-zA-Z]+)*"
+syn match marchLink "@[a-zA-Z]\+\(.[a-zA-Z]\+\)*"
+
+" @Abc.Def.Ghi
 
 hi def link marchKeywords Keyword
 hi def link marchDataTypes Type
