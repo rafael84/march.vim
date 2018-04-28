@@ -1,5 +1,5 @@
-syn keyword marchKeywords import config service domain default method returns with as declare error interface from call into on render decode
-syn keyword marchDataTypes string int bool hash timestamp
+syn keyword marchKeywords import config service domain default method returns with as declare error interface from call into on render decode return
+syn keyword marchDataTypes string int bool hash timestamp duration
 syn match marchComment "#.*$"
 syn region marchString start='"' end='"'
 syn match marchTag "--.*$"
