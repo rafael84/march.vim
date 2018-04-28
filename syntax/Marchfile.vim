@@ -1,4 +1,4 @@
-syn keyword marchKeywords config service domain default validate hidden optional identity implement returning with as declare error interface from call into on render decode
+syn keyword marchKeywords import config service domain default method returns with as declare error interface from call into on render decode
 syn keyword marchDataTypes string int bool hash timestamp
 syn match marchComment "#.*$"
 syn region marchString start='"' end='"'
@@ -11,7 +11,7 @@ hi def link marchDataTypes Type
 hi def link marchComment Comment
 hi def link marchString	String
 hi def link marchIdentifier	Identifier
-hi def link marchLink Identifier
+hi def link marchLink Type
 
 syn keyword marchON SUCCESS FAILURE
 syn keyword marchMethod GET POST PUT DELETE PATCH
