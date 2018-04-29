@@ -1,10 +1,11 @@
-syn keyword marchKeywords import config service domain default method returns with as declare error interface from call into on render decode return
+syn keyword marchKeywords import config service domain default method returns with as declare error interface from do returning on render decode return and
 syn keyword marchDataTypes string int bool hash timestamp interval
 syn match marchComment "#.*$"
 syn region marchString start='"' end='"'
 syn match marchTag "--.*$"
-syn match marchIdentifier "[a-zA-Z]\+"
+syn match marchIdentifier "[a-zA-Z]\+\([a-zA-Z_]\)*"
 syn match marchLink "@[a-zA-Z]\+\(.[a-zA-Z]\+\)*"
+syn keyword marchRepository repository for option is
 
 hi def link marchKeywords Keyword
 hi def link marchDataTypes Type
@@ -12,6 +13,7 @@ hi def link marchComment Comment
 hi def link marchString	String
 hi def link marchIdentifier	Identifier
 hi def link marchLink Type
+hi def link marchRepository Keyword
 
 syn keyword marchON SUCCESS FAILURE
 syn keyword marchMethod GET POST PUT DELETE PATCH
