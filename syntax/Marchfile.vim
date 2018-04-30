@@ -2,7 +2,7 @@ syn keyword mModule module
 syn keyword mModule import
 syn keyword mModule config
 syn keyword mModule service
-syn keyword mModule domain
+syn keyword mModule entity view
 syn keyword mModule interface
 syn keyword mModule error
 hi def link mModule Keyword
@@ -21,14 +21,11 @@ hi def link mComment Comment
 syn region mString start='"' skip=/\v\\./ end='"'
 hi def link mString	String
 
-syn region mTagStart start=' -- ' end=/$/
-hi def link mTagStart Tag
-
 syn match mIdentifier "[a-zA-Z]\+\([a-zA-Z_]\)*"
 hi def link mIdentifier	Identifier
 
-syn match mLink "@[a-zA-Z]\+\(.[a-zA-Z]\+\)*"
-hi def link mLink Type
+syn match mAnnotation "@[a-zA-Z]\+\(\.[a-zA-Z0-9]\+\)*"
+hi def link mAnnotation Type
 
 syn keyword mConnectors on
 syn keyword mConnectors with
