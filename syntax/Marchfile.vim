@@ -15,6 +15,7 @@ sy keyword mDataTypes bool
 sy keyword mDataTypes float
 sy keyword mDataTypes timestamp
 sy keyword mDataTypes interval
+sy keyword mDataTypes list
 hi def link mDataTypes Type
 
 sy match mComment "#.*$"
