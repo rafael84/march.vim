@@ -1,9 +1,9 @@
 sy keyword mModule module
 sy keyword mModule import
 sy keyword mModule config
-sy keyword mModule service
-sy keyword mModule entity
+sy keyword mModule model
 sy keyword mModule represents
+sy keyword mModule service
 sy keyword mModule persists
 sy keyword mModule interface
 sy keyword mModule error
@@ -29,17 +29,21 @@ hi def link mIdentifier	Identifier
 sy match mAnnotation "@[a-zA-Z]\+\(\.[a-zA-Z0-9]\+\)*"
 hi def link mAnnotation Type
 
-sy keyword mConnectors on
 sy keyword mConnectors with
 sy keyword mConnectors and
 hi def link mConnectors Operator
 
+sy keyword mFrom set
 sy keyword mFrom from
 sy keyword mFrom do
 sy keyword mFrom decode
 sy keyword mFrom as
-sy keyword mFrom returning
+sy keyword mFrom or
+sy keyword mFrom when
 hi def link mFrom Keyword
+
+sy keyword mHalt halt
+hi def link mHalt Keyword
 
 sy keyword mErrorCases SUCCESS
 sy keyword mErrorCases FAILURE
@@ -68,9 +72,6 @@ sy keyword mInterfaceRequest BODY
 sy keyword mInterfaceRequest PATH
 sy keyword mInterfaceRequest QUERY
 hi def link mInterfaceRequest Constant
-
-sy keyword mInterfaceRender render
-hi def link mInterfaceRender Keyword
 
 sy keyword mInterfaceStatus OK
 sy keyword mInterfaceStatus BAD_REQUEST
