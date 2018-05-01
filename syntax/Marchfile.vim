@@ -33,16 +33,22 @@ sy keyword mConnectors with
 sy keyword mConnectors and
 hi def link mConnectors Operator
 
-sy keyword mFrom set
-sy keyword mFrom from
-sy keyword mFrom do
-sy keyword mFrom decode
-sy keyword mFrom as
-sy keyword mFrom or
-sy keyword mFrom when
-hi def link mFrom Keyword
+sy keyword mGet get
+sy keyword mGet from
+hi def link mGet Keyword
 
+sy keyword mDo do
+hi def link mDo Keyword
+
+sy keyword mDecode decode
+hi def link mDecode Function
+
+sy keyword mAs as
+hi def link mAs Keyword
+
+sy keyword mHalt or
 sy keyword mHalt halt
+sy keyword mHalt when
 hi def link mHalt Keyword
 
 sy keyword mErrorCases SUCCESS
